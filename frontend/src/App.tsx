@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Encrypt, Configure } from "../wailsjs/go/main/App";
-import Machine3D from "./Machine3D";
+import RotorDisplay from "./RotorDisplay";
 
 const rotorOptions = ["I", "II", "III", "IV", "V"];
 
@@ -46,7 +46,7 @@ export default function App() {
         Enigma Simulator
       </header>
       <div className="p-2">
-        <Machine3D positions={positions} onRotate={handleRotorClick} />
+        <RotorDisplay positions={positions} onRotate={handleRotorClick} />
       </div>
       <main className="flex-grow flex items-center justify-center p-4">
         <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 w-full max-w-4xl shadow-2xl">
