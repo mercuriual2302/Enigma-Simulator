@@ -5,3 +5,11 @@
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
 }
+
+export function Encrypt(arg1) {
+  return window['go']['main']['App']['Encrypt'](arg1);
+}
+
+export function Configure(arg1, arg2, arg3, arg4) {
+  return window['go']['main']['App']['Configure'](arg1, arg2, arg3, arg4);
+}
